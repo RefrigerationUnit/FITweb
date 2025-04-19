@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITweb - Fitness Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="top-bar">
+    <div class="logo">FITweb</div>
+    <div class="nav-right">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pricing-section">
+    <h2>Choose Your Plan</h2>
+    <div class="plans-container">
+      <div class="plan-card individual">
+        <h3>Individual</h3>
+        <div class="price">FREE</div>
+        <ul>
+          <li>Workout tracking</li>
+          <li>Basic exercises library</li>
+          <li>Community support</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+
+      <div class="plan-card trainer">
+        <h3>Trainer Pro</h3>
+        <div class="price">$20/client/month</div>
+        <ul>
+          <li>Client management</li>
+          <li>Premium exercise library</li>
+          <li>Progress analytics</li>
+          <li>Premium support</li>
+        </ul>
+        <button>Choose Plan</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mission-section">
+    <h2>Maximize Your Physical Potential</h2>
+    <p>In today's digital age, fitness has transformed into a personalized, data-driven experience. FITweb bridges the gap between traditional training methods and modern technology, empowering both fitness enthusiasts and professionals to achieve optimal results through innovative tools and community support.</p>
+  </div>
+
+  <div class="gym-finder">
+    <div class="search-container">
+      <input type="text" id="locationInput" placeholder="Enter your location">
+      <button onclick="searchGyms()">Find Gyms</button>
+    </div>
+    <div id="map"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap">
+  </script>
+</body>
+</html>
